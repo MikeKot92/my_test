@@ -12,3 +12,8 @@ async def get_hello():
 @router.get("/ru")
 async def get_hello_ru():
     return {"Привет": "Мир"}
+
+
+@router.get("/es")
+async def get_hello_es():
+    return {"Hola": "Mundo"}
