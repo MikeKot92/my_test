@@ -17,3 +17,8 @@ async def get_hello_ru():
 @router.get("/es")
 async def get_hello_es():
     return {"Hola": "Mundo"}
+
+
+@router.get("/blr")
+async def get_hello_blr():
+    return {"Привет": "Мир"}
