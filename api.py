@@ -1,0 +1,14 @@
+from fastapi import APIRouter
+
+
+router = APIRouter(prefix="/hello", tags=["Приветствие"])
+
+
+@router.get("/")
+async def get_hello():
+    return {"Hello": "World"}
+
+
+@router.get("/ru")
+async def get_hello_ru():
+    return {"Привет": "Мир"}

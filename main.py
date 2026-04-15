@@ -1,13 +1,6 @@
 from fastapi import FastAPI
+from api import router as hello_router
 
 app = FastAPI()
 
-
-@app.get("/")
-async def get_hello():
-    return {"Hello": "World"}
-
-
-@app.get("/ru")
-async def get_hello_ru():
-    return {"Привет": "Мир"}
+app.include_router(hello_router)
