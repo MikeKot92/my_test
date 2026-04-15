@@ -27,3 +27,8 @@ async def get_hello_blr():
 @router.get("/deu")
 async def get_hello_deu():
     return {"Hallo": "Welt"}
+
+
+@router.get("/fra")
+async def get_hello_fra():
+    return {"Bonjour": "le monde"}
